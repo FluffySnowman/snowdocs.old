@@ -37,7 +37,8 @@
 	<br />
 	<p>
 		For updates on this project star and watch the <a
-			href="https://github.com/fluffysnowman/snowdocs" class="underline text-green-500">github repository</a
+			href="https://github.com/fluffysnowman/snowdocs"
+			class="underline text-green-500">github repository</a
 		>. Feel free to contribute to the project (I'll be adding contribution instructions later)
 	</p>
 </div>
