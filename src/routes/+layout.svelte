@@ -8,7 +8,7 @@
 </script>
 
 <!-- The app shell thing -->
-<AppShell slotSidebarLeft="bg-surface-500/5 w-56 p-4">
+<AppShell slotSidebarLeft="bg-surface-500/5 w-56 p-4" regionPage="scroll-smooth">
 	<svelte:fragment slot="header">
 		<!-- top navbar shit -->
 		<AppBar>
