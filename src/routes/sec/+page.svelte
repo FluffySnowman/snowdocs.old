@@ -39,8 +39,8 @@
 	</div>
 
 	<div class="w-8/12 p-4">
-		<div id="general-page-content" class="text-left">
-			<h1 class="h1 text-[#20c20e]">Wireless Network Auditing</h1>
+		<div id="sec-page-content" class="text-left">
+			<h2 class="h1 text-[#20c20e]">Wireless Network Auditing</h2>
 			<br />
 			<p><b>(copy pasting everything from the old site)</b></p>
 			<br />
