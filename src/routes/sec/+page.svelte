@@ -30,10 +30,10 @@
 <div use:tocCrawler={{ mode: 'generate', scrollTarget: '#page' }} class="hidden">
 	<h2>Wireless Network Auditing</h2>
 	<h3>Installation</h3>
-	<h3><a href="#wifi-attacks-with-aircrack">WiFi Attacks with Aircrack</a></h3>
+	<h3>WiFi Attacks with Aircrack</h3>
 </div>
 
-<div class="flex">
+<div class="flex" data-sveltekit-reload>
 	<div class="w-2/12 p-4 sticky top-6">
 		<TableOfContents class="sticky top-6" />
 	</div>
