@@ -25,7 +25,7 @@
 		},
 		{
 			label: 'Cyber Security',
-			value: 'hacking',
+			value: 'sec',
 			keywords: 'hacking, hack, cyber, security, command, aircrack, crack',
 			meta: { pageLink: '/sec' }
 		},

@@ -6,24 +6,16 @@
 	import type { TableSource } from '@skeletonlabs/skeleton';
 	import { tableMapperValues } from '@skeletonlabs/skeleton';
 
-	// import { CodeBlock } from '@skeletonlabs/skeleton';
+	import { CodeBlock } from '@skeletonlabs/skeleton';
 	import hljs from 'highlight.js/lib/core';
 
 	// codeblock highlight thing imports
-	import xml from 'highlight.js/lib/languages/xml'; // for HTML
-	import css from 'highlight.js/lib/languages/css';
-	import json from 'highlight.js/lib/languages/json';
-	import javascript from 'highlight.js/lib/languages/javascript';
-	import typescript from 'highlight.js/lib/languages/typescript';
 	import shell from 'highlight.js/lib/languages/shell';
+	import bash from 'highlight.js/lib/languages/bash';
 
 	// register codeblock shit
-	hljs.registerLanguage('xml', xml); // for HTML
-	hljs.registerLanguage('css', css);
-	hljs.registerLanguage('json', json);
-	hljs.registerLanguage('javascript', javascript);
-	hljs.registerLanguage('typescript', typescript);
 	hljs.registerLanguage('shell', shell);
+	hljs.registerLanguage('bash', bash);
 	import 'highlight.js/styles/github-dark.css';
 
 	import { storeHighlightJs } from '@skeletonlabs/skeleton';
@@ -104,9 +96,68 @@
 			<br />
 			<br />
 			<hr />
-
 			<br />
 			<h3 class="h2 text-[#FFA900]">Automation</h3>
+			<br />
+			<h4 class="h3 text-[#ff00f0]">Repository Mirroring with Crontab</h4>
+			<br />
+			<div>
+				<p>
+					Repositories can be mirrored from one site/origin to another using just 3 commands. You
+					will need read access for the Repository and write access to the new Repository. Here are
+					the commands which can be put into a <code>.sh (shell script)</code> file which can be used
+					for automation.
+				</p>
+				<br />
+				<CodeBlock
+					language="bash"
+					lineNumbers
+					code={`
+# Replace the URL with your Repository
+git clone --mirror https://github.com/fluffysnowman/snowdocs.git 
+
+# Replace with your Repository
+cd snowdocs.git
+
+# Replace with the new mirror Repository's URL
+git remote set-url --push origin http://192.168.1.124:8888/fluffysnowman/snowdocs.git
+
+# Finally push the Repository
+git push --mirror
+				`}
+				/>
+				<br />
+				<div id="repo-mirror-automation-wrapper">
+					<p>Lets take a look at what we did here</p>
+					<br />
+					<div>
+						<ul class="text-l">
+							<li class="text-l p-1">
+								<span>-</span>
+								<span class="" >We cloned the github repository to a folder in our current working directory</span>
+							</li>
+							<li class="text-l p-1">
+								<span>-</span>
+								<span class="" >We changed the directory to the new repository and chaged the remote's URL to the
+									one where the mirrored one will live</span >
+							</li>
+							<li class="text-l p-1">
+								<span>-</span>
+								<span class="" >We pushed the repositor to the new one with the <code>--mirror</code> option</span>
+							</li>
+						</ul>
+					</div>
+					<br />
+					<p>If all went well then this should've worked</p>
+					<br />
+					<p>
+						Now to automatically mirror the repository every 1 or 2 or x
+						hours/minutes/days we can use the <code>crontab</code> on linux
+					</p>
+					<br />
+					<p>To do this we need to open the crontab con</p>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
