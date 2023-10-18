@@ -33,6 +33,7 @@
 	<h2>Wireless Network Auditing</h2>
 	<h3>Installation</h3>
 	<h3>WiFi Attacks with Aircrack</h3>
+	<h3>Deauthentication</h3>
 </div>
 
 <div class="flex">

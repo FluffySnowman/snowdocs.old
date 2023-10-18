@@ -19,7 +19,7 @@
 	const searchOptions: AutocompleteOption<string>[] = [
 		{
 			label: 'Linux',
-			value: 'Cool shit',
+			value: 'linux',
 			keywords: 'linux, cli, command, shell',
 			meta: { pageLink: '/linux' }
 		},
@@ -28,6 +28,12 @@
 			value: 'hacking',
 			keywords: 'hacking, hack, cyber, security, command, aircrack, crack',
 			meta: { pageLink: '/sec' }
+		},
+		{
+			label: 'General',
+			value: 'general',
+			keywords: 'general, basics',
+			meta: { pageLink: '/general' }
 		}
 	];
 
