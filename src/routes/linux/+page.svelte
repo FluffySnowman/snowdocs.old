@@ -76,7 +76,8 @@
 <div use:tocCrawler={{ mode: 'generate', scrollTarget: '#page' }} class="hidden">
 	<h2>CLI</h2>
 	<h2>Shortcuts</h2>
-	<h3>Automation</h3>
+	<h2>Automation</h2>
+	<h3>Repository Mirroring With Crontab</h3>
 </div>
 
 <div class="flex">
